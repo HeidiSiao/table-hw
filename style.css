@@ -1,0 +1,72 @@
+html,
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  margin: 24px 24px;
+}
+
+table {
+  border: 3px solid black;
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+  padding: 1px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid black;
+  border-bottom-width: 0px;
+  text-align: center;
+  padding: 4px;
+ 
+}
+
+/* 線性漸變 (linear-gradient)創對角線 */
+.slash {
+  background-image: linear-gradient(to top right,
+  white 49%,
+  black,
+  white 51%);
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 定位在左下角 */
+.slash-text-left {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  transform: translate(20%, -20%);
+}
+
+/* 定位在右上角 */
+.slash-text-right {
+  position: absolute;
+  top: 0; 
+  right: 0;
+  transform: translate(-20%, 20%)
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text-sm {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pre {
+  white-space: pre;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
